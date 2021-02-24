@@ -12,13 +12,13 @@
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 3.5rem;
 
   &__img {
     width: 100%;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     z-index: 1;
-    
   }
 
   &__like {
@@ -51,16 +51,25 @@
   }
 
   &__location,
+  &__rooms {
+    margin-top: 2.5rem;
+  }
+
+  &__location,
   &__rooms,
   &__area,
   &__price {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
     svg {
       fill: $color-primary;
       height: 2rem;
       width: 2rem;
-    }
-
-    p {
     }
   }
 
