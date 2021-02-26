@@ -3,13 +3,17 @@
 
   margin: 15rem 0;
 
+
   display: grid;
   // grid-template-columns: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   // grid-template-rows: auto auto; // not needed bec if you don't define it it will create implicit grid
   grid-gap: 6rem;
   align-items: start;
+  
 }
+
+
 
 .feature {
   display: grid;
